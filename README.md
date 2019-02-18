@@ -11,7 +11,8 @@ dvmn - API веб-сервисов - Урок 3. Улучшаем утилиту
 ```bash
 pip install -r requirements.txt
 ```
-* добавить файл .env, содержащий api-token сайта bitly
+* добавить файл .env, содержащий api-token сайта bitly. пример:
+TOKEN=<api-token>
 
 ## Пример использования:
 ```bash
