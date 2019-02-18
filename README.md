@@ -9,7 +9,7 @@ dvmn - API веб-сервисов - Урок 3. Улучшаем утилиту
 ## Для использования требуется:
 * установить необходимые библиотеки:
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 * добавить файл .env, содержащий api-token сайта bitly. пример:
 ```
@@ -17,6 +17,6 @@ TOKEN=<api-token>
 ```
 ## Пример использования:
 ```bash
-python main.py ya.ru
+python3 main.py ya.ru
 Your bitlink: bit.ly/2t7hCiD
 ```
