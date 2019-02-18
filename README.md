@@ -14,12 +14,12 @@ pip3 install -r requirements.txt
 TOKEN=<api-token>
 ```
 ## Пример использования
-* если агурмент ссылка на сайт:
+* если аргумент ссылка на сайт:
 ```bash
 python3 main.py ya.ru
 Your bitlink: bit.ly/2t7hCiD
 ```
-* если агурмент ссылка на сайт:
+* если аргумент bitlink:
 ```bash
 python3 main.py bit.ly/2t7hCiD
 The number of clicks on the link: 5
