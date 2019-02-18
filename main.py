@@ -3,7 +3,16 @@ from requests.exceptions import RequestException
 import os
 from dotenv import load_dotenv
 from urllib.parse import urlparse
+import argparse
 
+
+def generate_parser():
+  parser = argparse.ArgumentParser(
+      description='Generate bitlink or view count of click on bitlink')
+  parser.add_argument(
+      type=str,
+      dest='input_link')
+  return parser
 
 def cut_url(api_token, input_link):
   url_shorten='https://api-ssl.bitly.com/v4/shorten'
@@ -42,8 +51,9 @@ def check_url(input_link):
 if __name__ == "__main__":
   load_dotenv()
   token=os.getenv("TOKEN")
-  
-  url = input('Enter url: ')
+  parser = generate_parser()
+  args = parser.parse_args()
+  url = args.input_link
 
   if not(check_url(url)):
     print('Invalid url!')
